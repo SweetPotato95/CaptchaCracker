@@ -201,13 +201,13 @@ def train_crack_captcha_cnn():
 		step = 0
 		print(step)
 		while True:
-			batch_x, batch_y = get_next_batch(10)
+			batch_x, batch_y = get_next_batch(1024)
 			_, loss_ = sess.run([optimizer, loss], feed_dict={X: batch_x, Y: batch_y, keep_prob: 0.75})
 			print(step, loss_)
 
 			# 每100 step计算一次准确率
 			if step % 100 == 0:
-				batch_x_test, batch_y_test = get_next_batch(10)
+				batch_x_test, batch_y_test = get_next_batch(1024)
 				acc = sess.run(accuracy, feed_dict={X: batch_x_test, Y: batch_y_test, keep_prob: 1.})
 				print(step, acc)
 				# 如果准确率大于50%,保存模型,完成训练
