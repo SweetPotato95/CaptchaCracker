@@ -1,0 +1,1 @@
+FOR /L %%I IN (1,1,100) DO python3 testModel.py -i %%I

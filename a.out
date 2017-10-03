@@ -1,0 +1,502 @@
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>FOR /L %I IN (1 1 100) DO python3 testModel.py -i %I 
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 1 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: Mu0uuR
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 2 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 8NN0tP
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 3 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 7NNPUP
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 4 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: FU0ttt
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 5 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: V0UWNu
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 6 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: MUtW0H
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 7 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: Pu0M33
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 8 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 4t6UU0
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 9 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: QNWWut
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 10 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: ZfNNbv
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 11 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: aOWU0t
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 12 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: WH0u7d
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 13 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 7B0tWU
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 14 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 00WWQ0
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 15 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 8UWPtt
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 16 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: tt5ttW
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 17 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: NMU0w4
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 18 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 4MuuW8
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 19 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: v0WWUU
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 20 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: RMUWU5
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 21 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: tUNN77
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 22 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: t9R9U0
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 23 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 5ty7NN
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 24 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: tUNyWU
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 25 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 4tUQ0t
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 26 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 7MUU0l
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 27 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 8UVUU5
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 28 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: U78tNt
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 29 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: MlNRUU
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 30 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: RIUUM0
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 31 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: tJau60
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 32 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: Z0QDwu
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 33 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: ltUXVl
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 34 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: D0dvQd
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 35 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: tWWdUu
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 36 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: RUUPut
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 37 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: U3977b
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 38 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: OP8MQQ
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 39 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: NwN0WW
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 40 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: N7700t
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 41 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: IZl7VP
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 42 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: WUUWUP
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 43 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 840UIc
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 44 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: RHUDu0
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 45 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: y000QP
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 46 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 3v0t3l
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 47 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: l0tvPr
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 48 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: TTtUU0
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 49 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: QVUNHU
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 50 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: PWdd00
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 51 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: t40UNt
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 52 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 8RUWWS
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 53 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: NU7N08
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 54 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: VTUN0y
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 55 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 0WW0cW
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 56 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 0b60Us
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 57 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: TyUUW9
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 58 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: T90WeV
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 59 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: PdWWWU
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 60 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 8tUURt
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 61 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: Z97tUU
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 62 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: t9U00t
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 63 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: ANt4DU
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 64 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 0ttUUt
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 65 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 0UWUUW
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 66 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: RItvtt
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 67 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 4ttVWP
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 68 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 0u0t9W
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 69 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 75W7uu
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 70 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: WHWU0u
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 71 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: NUc9v4
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 72 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: ZNz0u0
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 73 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: V75PUU
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 74 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: uP4UWV
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 75 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: yvH0ut
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 76 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 4NP39c
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 77 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: Ru4Duu
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 78 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: y3gvUN
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 79 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 9W00uU
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 80 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: tWUUUP
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 81 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: uQW30M
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 82 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: S7UxtU
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 83 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: RB0Wbx
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 84 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: cUWtu0
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 85 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 50U3v4
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 86 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 4MP0UQ
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 87 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: xtcUUN
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 88 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: t4UvUU
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 89 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: ltU0cP
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 90 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: TMuORd
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 91 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 0BuuUN
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 92 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: PttWWA
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 93 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 0t0u0u
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 94 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 4Ut044
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 95 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 50cN0t
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 96 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: ttN7cc
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 97 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: Wtttd9
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 98 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: 6NVtvU
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 99 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: a7Nttt
+
+C:\Users\Zehua Zhang\workspace\CaptchaCracker>python3 testModel.py -i 100 
+验证码图像channel: (25, 96, 3)
+验证码文本最长字符数 6
+正确: 1  预测: t7WWyd
