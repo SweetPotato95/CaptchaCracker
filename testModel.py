@@ -157,7 +157,6 @@ def crack_captcha_cnn(w_alpha=0.01, b_alpha=0.1):
 
 def crack_captcha(captcha_image):
 	output = crack_captcha_cnn()
-
 	saver = tf.train.Saver()
 	#saver = tf.train.import_meta_graph('crack_capcha.model-2200.meta')
 	with tf.Session() as sess:

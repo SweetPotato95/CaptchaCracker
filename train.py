@@ -38,8 +38,7 @@ def text2vec(text):
 	text_len = len(text)
 	if text_len > MAX_CAPTCHA:
 		raise ValueError('验证码最长4个字符')
-
-	vector = np.zeros(MAX_CAPTCHA*CHAR_SET_LEN)
+	vector = [np.zeros(CHAR_SET_LEN),np.zeros(CHAR_SET_LEN),np.zeros(CHAR_SET_LEN),np.zeros(CHAR_SET_LEN),np.zeros(CHAR_SET_LEN),np.zeros(CHAR_SET_LEN)]
 	def char2pos(c):
 		if c =='_':
 			k = 62
@@ -53,8 +52,8 @@ def text2vec(text):
 					raise ValueError('No Map')
 		return k
 	for i, c in enumerate(text):
-		idx = i * CHAR_SET_LEN + char2pos(c)
-		vector[idx] = 1
+		idx = char2pos(c)
+		vector[i][idx] = 1
 	return vector
 # 向量转回文本
 def vec2text(vec):
@@ -89,7 +88,7 @@ print(text)  # SFd5
 # 生成一个训练batch
 def get_next_batch(batch_size=128):
 	batch_x = np.zeros([batch_size, IMAGE_HEIGHT*IMAGE_WIDTH])
-	batch_y = np.zeros([batch_size, MAX_CAPTCHA*CHAR_SET_LEN])
+	batch_y = np.zeros([batch_size, 6,CHAR_SET_LEN])
 
 	def wrap_gen_captcha_text_and_image():
 		''' 获取一张图，判断其是否符合（60，160，3）的规格'''
@@ -111,7 +110,7 @@ def get_next_batch(batch_size=128):
 ####################################################################
 # 申请占位符 按照图片
 X = tf.placeholder(tf.float32, [None, IMAGE_HEIGHT*IMAGE_WIDTH])
-Y = tf.placeholder(tf.float32, [None, MAX_CAPTCHA*CHAR_SET_LEN])
+Y = tf.placeholder(tf.float32, [None, 6,CHAR_SET_LEN])
 keep_prob = tf.placeholder(tf.float32) # dropout
 
 # 定义CNN
@@ -151,19 +150,43 @@ def crack_captcha_cnn(w_alpha=0.01, b_alpha=0.1):
 	dense = tf.nn.relu(tf.add(tf.matmul(dense, w_d), b_d))
 	dense = tf.nn.dropout(dense, keep_prob)
 
-	w_out = tf.Variable(w_alpha*tf.random_normal([1024, MAX_CAPTCHA*CHAR_SET_LEN]))
-	b_out = tf.Variable(b_alpha*tf.random_normal([MAX_CAPTCHA*CHAR_SET_LEN]))
-	out = tf.add(tf.matmul(dense, w_out), b_out)
-	#out = tf.nn.softmax(out)
+	w_out_1 = tf.Variable(w_alpha*tf.random_normal([1024, CHAR_SET_LEN]))
+	b_out_1 = tf.Variable(b_alpha*tf.random_normal([CHAR_SET_LEN]))
+	out_1 = tf.add(tf.matmul(dense, w_out_1), b_out_1)
+
+	w_out_2 = tf.Variable(w_alpha*tf.random_normal([1024, CHAR_SET_LEN]))
+	b_out_2 = tf.Variable(b_alpha*tf.random_normal([CHAR_SET_LEN]))
+	out_2 = tf.add(tf.matmul(dense, w_out_2), b_out_2)
+
+	w_out_3 = tf.Variable(w_alpha*tf.random_normal([1024, CHAR_SET_LEN]))
+	b_out_3 = tf.Variable(b_alpha*tf.random_normal([CHAR_SET_LEN]))
+	out_3 = tf.add(tf.matmul(dense, w_out_3), b_out_3)
+
+	w_out_4 = tf.Variable(w_alpha*tf.random_normal([1024, CHAR_SET_LEN]))
+	b_out_4 = tf.Variable(b_alpha*tf.random_normal([CHAR_SET_LEN]))
+	out_4 = tf.add(tf.matmul(dense, w_out_4), b_out_4)
+
+	w_out_5 = tf.Variable(w_alpha*tf.random_normal([1024, CHAR_SET_LEN]))
+	b_out_5 = tf.Variable(b_alpha*tf.random_normal([CHAR_SET_LEN]))
+	out_5 = tf.add(tf.matmul(dense, w_out_5), b_out_5)
+
+	w_out_6 = tf.Variable(w_alpha*tf.random_normal([1024, CHAR_SET_LEN]))
+	b_out_6 = tf.Variable(b_alpha*tf.random_normal([CHAR_SET_LEN]))
+	out_6 = tf.add(tf.matmul(dense, w_out_6), b_out_6)
+	out = [out_1,out_2,out_3,out_4,out_5,out_6]
 	return out
+
 
 # 训练
 def train_crack_captcha_cnn():
 	output = crack_captcha_cnn()
-	#loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=output, labels=Y))
-	loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=output, labels=Y))
-        # 最后一层用来分类的softmax和sigmoid有什么不同？
-	# optimizer 为了加快训练 learning_rate应该开始大，然后慢慢衰
+	loss1 = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=output[0], labels=tf.transpose(Y, [1, 0, 2])[0]))
+	loss2 = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=output[1], labels=tf.transpose(Y, [1, 0, 2])[1]))
+	loss3 = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=output[2], labels=tf.transpose(Y, [1, 0, 2])[2]))
+	loss4 = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=output[3], labels=tf.transpose(Y, [1, 0, 2])[3]))
+	loss5 = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=output[4], labels=tf.transpose(Y, [1, 0, 2])[4]))
+	loss6 = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=output[5], labels=tf.transpose(Y, [1, 0, 2])[5]))
+	loss = loss1+loss2+loss3+loss4+loss5+loss6
 	optimizer = tf.train.AdamOptimizer(learning_rate=0.001).minimize(loss)
 
 	predict = tf.reshape(output, [-1, MAX_CAPTCHA, CHAR_SET_LEN])
@@ -178,13 +201,13 @@ def train_crack_captcha_cnn():
 		step = 0
 		print(step)
 		while True:
-			batch_x, batch_y = get_next_batch(1024)
+			batch_x, batch_y = get_next_batch(10)
 			_, loss_ = sess.run([optimizer, loss], feed_dict={X: batch_x, Y: batch_y, keep_prob: 0.75})
 			print(step, loss_)
 
 			# 每100 step计算一次准确率
 			if step % 100 == 0:
-				batch_x_test, batch_y_test = get_next_batch(1024)
+				batch_x_test, batch_y_test = get_next_batch(10)
 				acc = sess.run(accuracy, feed_dict={X: batch_x_test, Y: batch_y_test, keep_prob: 1.})
 				print(step, acc)
 				# 如果准确率大于50%,保存模型,完成训练

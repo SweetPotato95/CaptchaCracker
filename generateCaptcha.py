@@ -50,7 +50,6 @@ def genPicture():
 	font = ImageFont.truetype("LBRITED.TTF", 20)
 	draw.text((10, 0),name,(10,10,10),font=font)
 	drawNoise(draw)
-	img.show()
 	return (name,np.array(img))
 
 def drawPictures():
